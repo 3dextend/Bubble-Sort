@@ -15,7 +15,7 @@ public class BubbleSortApp {
             arr.insert(22);
             arr.insert(88);
             arr.insert(11);
-            arr.insert(00);
+            arr.insert(0);
             arr.insert(66);
             arr.insert(33);
             arr.display(); // Вывод элементов
