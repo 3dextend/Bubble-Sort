@@ -13,11 +13,14 @@ public class BubbleSortApp {
             arr.insert(44);
             arr.insert(55);
             arr.insert(22);
-            arr.insert(88);
+            arr.insert(-120);
             arr.insert(11);
             arr.insert(0);
             arr.insert(66);
-            arr.insert(33);
+            arr.insert(-2);
+            arr.insert(-7);
+            arr.insert(-20);
+            arr.insert(88);
             arr.display(); // Вывод элементов
             arr.bubbleSort(); // Пузырьковая сортировка элементов
             arr.display(); // Повторный вывод
