@@ -5,10 +5,15 @@
 public class SelectSortApp {
     public static void main(String[] args)
     {
-        int maxSize = 100; // Размер массива
+        int maxSize = 20; // Размер массива
         ArraySel arr; // Ссылка на массив
         arr = new ArraySel(maxSize); // Создание массива
-        arr.insert(77); // Вставка 10 элементов
+        for(int j=0; j<maxSize; j++) // Заполнение массива
+        { // случайными числами
+            long n = (long)( java.lang.Math.random()*(maxSize-1) );
+            arr.insert(n);
+        }
+        /*arr.insert(77); // Вставка 10 элементов
         arr.insert(99);
         arr.insert(-7);
         arr.insert(55);
@@ -19,7 +24,7 @@ public class SelectSortApp {
         arr.insert(66);
         arr.insert(33);
         arr.insert(33);
-        arr.insert(-45);
+        arr.insert(-45);*/
         arr.display(); // Вывод элементов
         arr.selectionSort(); // Сортировка методом выбора
         arr.display(); // Повторный вывод
